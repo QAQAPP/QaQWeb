@@ -1,0 +1,31 @@
+.workspace-body{
+	width: 90%;
+	background: #ddd;
+	margin-left: 5%;
+	overflow: hidden;
+}
+
+.anadd{
+	position: absolute;
+	float: left;
+	width: 220px;
+	height: 350px;
+	margin-top: 100px;
+	background: #f3a64b;
+}
+
+.anadd p {
+	position: absolute;
+	top: 200px;
+	text-align: center;
+	color: white;
+	width: 220px;
+}
+
+.add1{
+	left: 18%;
+}
+
+.add2{
+	right: 18%;
+}

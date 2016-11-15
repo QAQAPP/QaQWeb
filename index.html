@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>QAQ</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="author" href="humans.txt"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+        <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-auth.js"></script>
+
+
+	
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyDpCERknfLE4_tzJnBE54zlHeA32ehCQ1I",
+		    authDomain: "login-f8183.firebaseapp.com",
+		    databaseURL: "https://login-f8183.firebaseio.com",
+		    storageBucket: "login-f8183.appspot.com",
+		    messagingSenderId: "543947308037"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+    </head>
+    <body>
+        <div class = "header" >
+        	<div class = "header-content" >
+        		<a href = "index.html" class = "header-logo">
+        		</a>
+
+        		<nav class = "header-login">
+        		<a href= "#" class = "header-signin">Sign in</a>
+        		<a href = "#" class = "header-signup">Sign up</a>
+        		</nav>
+        	</div>
+        </div>
+        <div class= "body-background">
+        	<div class="body-example">
+        	</div>
+        	<a class="body-createad" href="createAd.html">
+        		CREATE YOUR AD NOW
+        	</a>
+        </div>
+
+        <div class="blur-mask">
+        	
+        </div>
+        <div class="sign-in">
+        		<!-- <div class="si-close"></div> -->
+        		<div class="username si-line">
+        			<p>E-Mail</p>
+        			<input id="email">
+        		</div>
+        		<div class="password si-line">
+        			<p>Password</p>
+        			<input id="password" type = "password">
+        		</div>
+        		<div class="si-alert">
+        			<p id = "si-message"></p>
+        		</div>
+        		<div class="si-buttons">
+        			<button id="si-signin">
+        				Sign in
+        			</button>
+					<button id="si-cancel">
+						Cancel
+					</button>
+        		</div>
+        </div>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>QAQ</title>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/template.css">
+        <!-- <link rel="author" href="humans.txt"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase-auth.js"></script>
+        
+        <script src="js/templatedraw.js"></script>
+	
+		<script>
+		  var config = {
+		    apiKey: "AIzaSyDpCERknfLE4_tzJnBE54zlHeA32ehCQ1I",
+		    authDomain: "login-f8183.firebaseapp.com",
+		    databaseURL: "https://login-f8183.firebaseio.com",
+		    storageBucket: "login-f8183.appspot.com",
+		    messagingSenderId: "543947308037"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+        <script src="js/templateStyle.js"></script>
+    </head>
+    <body>
+    	 <div class = "header" >
+        	<div class = "header-content" >
+        		<a href = "index.html" class = "header-logo">
+        		</a>
+
+        		<nav class = "header-login">
+        		<a href= "#" class = "header-signin">Sign in</a>
+        		<a href = "#" class = "header-signup">Sign up</a>
+        		</nav>
+        	</div>
+        </div>
+        <div class="tool-bar">
+            <div class="tool-step active" id="template">
+                Step 1: Template
+            </div>
+            <div class="tool-step" id="editcontent">
+                Step 2: Edit content
+            </div>
+            <div class="tool-step" id="provideinfo">
+                Step 3: Provide info
+            </div>
+        </div>
+        <div class="template clearfix">
+            <div class = "templateChooser">
+                <div class="whatkind">
+                    <p>
+                        What kind of business are you doing?
+                    </p>
+                    <input class="business">
+                </div>
+                <div class="lists clearfix">
+                    <div class="anadd">
+                    </div>
+                     <div class="anadd">
+                    </div>
+                </div>
+
+            </div>
+            <div class = "template-right">
+                <img src="img/exampletemplate.jpg" id = "timage" width = "375" height = "667" />
+                <a href="#" class = "start">
+                    START
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="editcontent clearfix">
+            <div class="header1">
+            </div>
+            <div class="header2">
+            </div>
+            <div class="templateChooser">
+                <div class="tc-editor">
+                    Editor
+                </div>
+                <div class="tc-block-content">
+                    <div class="tc-block-name" >
+                        Name of your business:
+                    </div>
+                    <input class="tc-block-input" id="tc-business"/>
+                </div>
+                <div class="tc-block-content">
+                    <div class="tc-block-name">
+                        Summarize in one sentence
+                    </div>
+                    <input class="tc-block-input" />
+                </div>
+                <div class="tc-block-content">
+                    <div class="tc-block-name">
+                        More Info:
+                    </div>
+                    <input class="tc-block-input" />
+                </div>
+                <div class="tc-block-content">
+                    <div class="tc-block-name">
+                        Upload background Image
+                    </div>
+                    <form>
+                        <input type="file" style="display: none;" id="filechooser">
+                        <label for="filechooser">
+                        <span>CHOOSE
+                        </span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class = "template-right">
+                <canvas id = "mcanvas" height= "667" width="375">
+                </canvas>
+                <a href="#" class = "start">
+                    START
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

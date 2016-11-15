@@ -1,0 +1,50 @@
+body{
+	background: #eee;
+}
+.tool-bar{
+	height: 40px;
+	line-height: 40px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+}
+.tool-bar-myAd{
+	display: inline-block;
+	margin-left: 100px;
+	color: #666;
+	font-size: 16px;
+}
+.ma-content{
+	width: 100%;
+	position: relative;
+	/*height: 1000px;*/
+}
+
+.anadd{
+	display: inline-block;
+	float: left;
+	width: 200px;
+	height: 350px;
+	margin-top: 40px;
+	margin-left: 50px;
+	background: #f3a64b;
+}
+.addplus{
+	background: url("../img/add.png");
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	margin-top: 75px;
+	margin-left: 60px;
+	height: 80px;
+	width: 80px;
+	transition: .5s
+}
+.anadd:hover .addplus{
+	transform: rotate(180deg);
+}
+.anaddcontent{
+	color: white;
+	width: 100%;
+	margin-top: 60px;
+	text-align: center;
+	transition: .5s;
+}

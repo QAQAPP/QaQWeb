@@ -1,0 +1,55 @@
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+}
+div{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+}
+p{
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+a{
+	text-decoration: none;
+}
+.clearfix{
+	clear:both;
+	overflow: auto;
+	zoom: 1;
+}
+.header{
+	/*line-height: 62px;*/
+	height: 62px;
+	width: 100%;
+	padding-bottom: 12px;
+	background: #fff;
+	border-radius: 2px;
+    border-bottom: 1px solid #e5e5e5;
+
+
+}
+.header-logo{
+	display: inline-block;
+	height: 50px;
+	width: 80px;
+	margin-top: 12px;
+	margin-left: 35px;
+	background: url("../img/QAQLogo.png");
+	-webkit-background-size: 80px 50px;
+	background-size: 80px 50px;
+}
+.header-content nav{
+	float: right;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: 500;
+	margin-top: 12px;
+	line-height: 50px;
+}
+.header-content nav a{
+	padding-right: 30px;
+	color: #666;
+	font-weight: 500;
+}
